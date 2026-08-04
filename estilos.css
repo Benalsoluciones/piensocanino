@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.hero{
+    min-height:90vh;
+    background:url("../img/hero.jpg") center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    position:relative;
+}
+
+.hero h1{
+    text-shadow:2px 2px 8px rgba(0,0,0,.5);
+}
+
+.hero p{
+    text-shadow:1px 1px 5px rgba(0,0,0,.5);
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero .container{
+    position:relative;
+    z-index:2;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+   scroll-margin-top:90px;
+}
+
+footer{
+    text-align:center;
+}
