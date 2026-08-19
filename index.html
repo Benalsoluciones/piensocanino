@@ -3,170 +3,472 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Final JavaScript</title>
+    <title>PiensoCanino - Guías y Alimentación para tu Perro</title>
+    <meta name="description" content="Comparativas y análisis objetivos de las mejores marcas de pienso para perros. Elige la mejor nutrición para tu mascota.">
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <!-- Mi css personalizado -->
+
+    <!-- CSS personalizado -->
     <link rel="stylesheet" href="estilos.css">
-
 </head>
+
 <body>
-    <header>
-        <div class="bg-dark text-white py-2">
-    <div class="container">
 
-        <div class="row align-items-center">
+<header>
+    <div class="bg-dark text-white py-2">
+        <div class="container">
+            <div class="row align-items-center">
 
-            <!-- Izquierda -->
-            <div class="col-md-6 text-center text-md-start">
+                <!-- Izquierda -->
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="me-3"><i class="bi bi-shield-check me-2"></i>Análisis nutricionales independientes</span>
+                    <span><i class="bi bi-envelope-fill me-2"></i>contacto@piensocanino.com</span>
+                </div>
 
-                <i class="bi bi-telephone-fill me-2"></i>600 123 456
-
-                <span class="ms-4">
-                    <i class="bi bi-envelope-fill me-2"></i>contacto@misitio.com
-                </span>
+                <!-- Derecha -->
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white" aria-label="X/Twitter"><i class="bi bi-twitter-x"></i></a>
+                </div>
 
             </div>
+        </div>
+    </div>
 
-            <!-- Derecha -->
-            <div class="col-md-6 text-center text-md-end">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container-fluid px-4 px-lg-5">
 
-                <a href="#" class="text-white me-3">
-                    <i class="bi bi-facebook"></i>
-                </a>
+            <a class="navbar-brand fw-bold text-primary" href="index.html"><i class="bi bi-patch-check-fill me-2"></i>PiensoCanino</a>
 
-                <a href="#" class="text-white me-3">
-                    <i class="bi bi-instagram"></i>
-                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <a href="#" class="text-white">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
-
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perros.html">Perros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="comparativas.html">Comparativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
             </div>
 
         </div>
-
-    </div>
-</div>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-    <div class="container-fluid px-4 px-lg-5">
-
-        <a class="navbar-brand fw-bold" href="index.html">
-            PiensoCanino
-        </a>
-
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Inicio</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="productos.html">Productos</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="perros.html">Perros</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="comparativas.html">Comparativas</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-</nav>
-
+    </nav>
 </header>
-   <section class="hero d-flex align-items-center text-center text-white">
 
-    <div class="container">
-
-        <h1 class="display-3 fw-bold">
-            Bienvenido a Mi Sitio Web
-        </h1>
-
-        <p class="lead">
-            Ofrecemos soluciones innovadoras para impulsar tu éxito.
-        </p>
-
-        <a href="#servicios" class="btn btn-primary btn-lg">
-            Ver servicios
-        </a>
-
-    </div>
-
-</section>
+<!-- HERO -->
+<!-- HERO -->
+    <section class="hero d-flex align-items-center text-center text-white py-5">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold">La mejor alimentación para tu perro</h1>
+            <p class="lead fs-4 mb-4">Comparativas, análisis de ingredientes y recomendaciones para cuidar su salud.</p>
+            <a href="comparativas.html" class="btn btn-warning btn-lg fw-bold shadow">Ver comparativas destacadas</a>
+        </div>
+    </section>
 
 <main>
 
-<section id="sobre" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Sobre nosotros</h2>
+<!-- PRODUCTOS DESTACADOS / GUÍAS -->
+<section id="destacados" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-2">Recomendaciones Top</h2>
+        <p class="text-center text-muted mb-5">Selección de piensos mejor valorados por veterinarios y compradores</p>
 
-            <p class="lead text-center">
-                Aquí irá la presentación de la empresa.
-            </p>
-        </div>
-    </section>
+        <div class="row g-4">
 
-    <section id="servicios" class="py-5 bg-light">
-        <div class="container">
-            <!--Contenido de servicios-->
-            <h2 class="text-center mb-5">Servicios</h2>
-        </div>
-    </section>
+            <!-- Producto 1 con Carrusel -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    
+                    <!-- CARRUSEL DE IMÁGENES -->
+                    <div id="carruselProducto1" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicadores (puntos inferiores - 5 imágenes = 5 botones del 0 al 4) -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carruselProducto1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vista frontal"></button>
+                            <button type="button" data-bs-target="#carruselProducto1" data-bs-slide-to="1" aria-label="Ingredientes y trasera"></button>
+                            <button type="button" data-bs-target="#carruselProducto1" data-bs-slide-to="2" aria-label="Tamaño"></button>
+                            <button type="button" data-bs-target="#carruselProducto1" data-bs-slide-to="3" aria-label="Porcentaje proteína"></button>
+                            <button type="button" data-bs-target="#carruselProducto1" data-bs-slide-to="4" aria-label="Cantidades recomendadas"></button>
+                        </div>
 
-    <section id="noticias" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Últimas noticias</h2>
-            <!-- Contenido de las noticias -->
-            <div id="contenedorNoticias" class="row g-4">
+                        <div class="carousel-inner">
+                            <!-- Foto 1: Frontal -->
+                            <div class="carousel-item active">
+                                <img src="https://m.media-amazon.com/images/I/812t06HkwnL.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Pienso Premium Adult - Frontal" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 2: Trasera / Ingredientes -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/71Jam8OcisL.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Pienso Premium Adult - Ingredientes" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 3: Tamaño -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/31rDG3fZS7L.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Pienso Premium Adult - Tamaño" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 4: Porcentaje proteína -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/31wKjusis-L.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Pienso Premium Adult - Porcentaje proteína" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 5: Cantidades recomendadas -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/81jZrXDrBWL.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Pienso Premium Adult - Cantidades recomendadas" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                        </div>
 
+                        <!-- Botones de navegación (Flechas) -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselProducto1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true" style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselProducto1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true" style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 w-auto me-auto">Para Perros Adultos</span>
+                        <h3 class="card-title h5">Pienso Premium Adult</h3>
+                        <p class="card-text text-muted">Nutrición completa y rica en proteína de alta calidad para perros adultos activos.</p>
+                        
+                        <a href="https://amzn.to/4cPWm70" target="_blank" rel="sponsored nofollow noopener" class="btn btn-primary mt-auto">
+                            <i class="bi bi-cart-check me-2"></i>Ver precio en Amazon
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 con Carrusel -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    
+                    <!-- CARRUSEL DE IMÁGENES -->
+                    <div id="carruselProducto2" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicadores (puntos inferiores - dirigidos a #carruselProducto2) -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carruselProducto2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vista frontal"></button>
+                            <button type="button" data-bs-target="#carruselProducto2" data-bs-slide-to="1" aria-label="Ingredientes y trasera"></button>
+                            <button type="button" data-bs-target="#carruselProducto2" data-bs-slide-to="2" aria-label="Tamaño"></button>
+                            <button type="button" data-bs-target="#carruselProducto2" data-bs-slide-to="3" aria-label="Porcentaje proteína"></button>
+                            <button type="button" data-bs-target="#carruselProducto2" data-bs-slide-to="4" aria-label="Cantidades recomendadas"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <!-- Foto 1: Frontal -->
+                            <div class="carousel-item active">
+                                <img src="https://m.media-amazon.com/images/I/71FdRZO2b+L.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Advance Mini Puppy - Frontal" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 2: Trasera / Ingredientes -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/71KdjBb8zSL.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Advance Mini Puppy - Trasera" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 3: Tamaño croqueta -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/61YdD1iA38L.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Advance Mini Puppy - Tamaño de croqueta" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 4: Beneficios nutricionales -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/81rxRzbh3TL.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Advance Mini Puppy - Cantidad diaria recomendada" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 5: Guía de alimentación -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/61YdD1iA38L.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="Advance Mini Puppy - Cantidades recomendadas" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                        </div>
+
+                        <!-- Botones de navegación (Flechas - dirigidos a #carruselProducto2) -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselProducto2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true" style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselProducto2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true" style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 w-auto me-auto">Para Cachorros Mini</span>
+                        <h3 class="card-title h5">Advance Mini Puppy (3 kg)</h3>
+                        <p class="card-text text-muted">Fórmula con pollo y arroz para cachorros de raza pequeña (2 a 10 meses). Croqueta adaptada a sus mandíbulas.</p>
+                        
+                        <a href="https://amzn.to/4cPWm70" target="_blank" rel="sponsored nofollow noopener" class="btn btn-primary mt-auto">
+                            <i class="bi bi-cart-check me-2"></i>Ver precio en Amazon
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 con Carrusel -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    
+                    <!-- CARRUSEL DE IMÁGENES -->
+                    <div id="carruselProducto3" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicadores (puntos inferiores - dirigidos a #carruselProducto3) -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carruselProducto3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vista frontal"></button>
+                            <button type="button" data-bs-target="#carruselProducto3" data-bs-slide-to="1" aria-label="Ingredientes y trasera"></button>
+                            <button type="button" data-bs-target="#carruselProducto3" data-bs-slide-to="2" aria-label="Tamaño"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <!-- Foto 1: Frontal -->
+                            <div class="carousel-item active">
+                                <img src="https://m.media-amazon.com/images/I/71w7W3hbhQL.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="The Hunger of the Wolf Light - Frontal" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 2: Trasera / Ingredientes -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/61DFkybnv-L.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="The Hunger of the Wolf Light - Cantidades recomendadas" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                            <!-- Foto 3: Tamaño -->
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/91-pOvj2ORL._AC_SL1500_.jpg" 
+                                    class="d-block w-100 p-1" 
+                                    alt="The Hunger of the Wolf Light - Tamaño croqueta" 
+                                    referrerpolicy="no-referrer"
+                                    style="height: 280px; object-fit: contain;">
+                            </div>
+                        </div>
+
+                        <!-- Botones de navegación (Flechas - dirigidos a #carruselProducto3) -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselProducto3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true" style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselProducto3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true" style="background-size: 50%;"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-info text-dark mb-2 w-auto me-auto">Sobrepeso y Esterilizados</span>
+                        <h3 class="card-title h5">The Hunger of the Wolf Light (14 kg)</h3>
+                        <p class="card-text text-muted">Fórmula ligera a base de pollo diseñada para el control de peso en perros adultos con sobrepeso o esterilizados.</p>
+                        
+                        <a href="https://amzn.to/4cPWm70" target="_blank" rel="sponsored nofollow noopener" class="btn btn-primary mt-auto">
+                            <i class="bi bi-cart-check me-2"></i>Ver precio en Amazon
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="contacto" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Contacto</h2>
-            <!-- Contenido de contacto -->
+<!-- SOBRE NOSOTROS -->
+<section id="sobre" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Sobre PiensoCanino</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="lead text-muted">
+                    En PiensoCanino analizamos objetivamente las etiquetas nutricionales, los ingredientes y la relación calidad-precio de los principales piensos del mercado para ayudarte a tomar la mejor decisión para tu compañero de 4 patas.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Lo que encontrarás en nuestra web</h2>
+
+        <div class="row text-center g-4">
+
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <i class="bi bi-search fs-1 text-primary"></i>
+                    <h3 class="h5 mt-3">Análisis de ingredientes</h3>
+                    <p class="text-muted">Desglosamos las etiquetas para identificar la calidad real de las proteínas y cereales.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <i class="bi bi-bar-chart fs-1 text-primary"></i>
+                    <h3 class="h5 mt-3">Comparativas detalladas</h3>
+                    <p class="text-muted">Enfrentamos las marcas más populares para ver cuál ofrece la mejor relación calidad-precio.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded shadow-sm h-100">
+                    <i class="bi bi-heart fs-1 text-primary"></i>
+                    <h3 class="h5 mt-3">Guías por necesidades</h3>
+                    <p class="text-muted">Recomendaciones específicas para problemas de piel, alergias, cachorros y perros sénior.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- POR QUÉ ELEGIRNOS -->
+<section id="elegirnos" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Compromisos</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3 text-center">
+                <i class="bi bi-award fs-1 text-primary"></i>
+                <p class="fw-bold mt-3">Información Imparcial</p>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <i class="bi bi-check-circle fs-1 text-primary"></i>
+                <p class="fw-bold mt-3">Criterio Nutricional</p>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <i class="bi bi-people fs-1 text-primary"></i>
+                <p class="fw-bold mt-3">Opiniones de Usuarios</p>
+            </div>
+
+            <div class="col-md-3 text-center">
+                <i class="bi bi-lightning fs-1 text-primary"></i>
+                <p class="fw-bold mt-3">Precios Actualizados</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ÚLTIMAS NOTICIAS -->
+<section id="noticias" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Últimos Artículos y Consejos</h2>
+        <div id="contenedorNoticias" class="row g-4">
+            <!-- Aquí se cargarán los artículos dinámicamente con JS -->
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Lo que dicen los dueños</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm bg-light rounded h-100">
+                    <p class="fst-italic">"Gracias a sus comparativas encontré un pienso sin cereales perfecto para las alergias digestivas de mi perro."</p>
+                    <small class="text-primary fw-bold">– Marta (Málaga)</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm bg-light rounded h-100">
+                    <p class="fst-italic">"Las tablas comparativas son facilísimas de entender. Ahorré tiempo y dinero en mi compra."</p>
+                    <small class="text-primary fw-bold">– Carlos (Sevilla)</small>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="p-4 shadow-sm bg-light rounded h-100">
+                    <p class="fst-italic">"Súper útil la guía para cachorros. Mi perro ha crecido sano y con un pelo muy brillante."</p>
+                    <small class="text-primary fw-bold">– Laura (Granada)</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 </main>
-<footer class="bg-dark text-white text-center py-4">
 
+<!-- FOOTER CON AVISO LEGAL OBLIGATORIO DE AMAZON -->
+<footer class="bg-dark text-white pt-5 pb-4">
     <div class="container">
-
-        <p class="mb-0">
-            © 2026 Mi Sitio Web. Todos los derechos reservados.
-        </p>
-
+        <div class="row g-4">
+            <div class="col-md-6 text-center text-md-start">
+                <h5 class="fw-bold text-white mb-3">PiensoCanino</h5>
+                <p class="small text-muted mb-3">
+                    En calidad de Afiliado de Amazon, este sitio web obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Amazon y el logotipo de Amazon son marcas comerciales de Amazon.com, Inc. o sus filiales.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <h5 class="fw-bold text-white mb-3">Páginas Legales</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="aviso-legal.html" class="text-muted text-decoration-none">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html" class="text-muted text-decoration-none">Política de Privacidad</a></li>
+                    <li><a href="politica-cookies.html" class="text-muted text-decoration-none">Política de Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="my-4 border-secondary">
+        <div class="text-center small text-muted">
+            <p class="mb-0">&copy; 2026 PiensoCanino. Todos los derechos reservados.</p>
+        </div>
     </div>
-
 </footer>
-  
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous"></script>
+
 </body>
 </html>
