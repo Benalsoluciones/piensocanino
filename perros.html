@@ -6,12 +6,17 @@
     <title>PiensoCanino - Perros</title>
 
     <!-- Bootstrap CSS -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
 
-    <!-- Tu CSS -->
-    <link rel="stylesheet" href="estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
 </head>
 
 <body>
@@ -62,59 +67,222 @@
     </header>
 
     <!-- CONTENIDO -->
-    <div class="container my-5">
+    <main class="container my-5">
 
-        <div class="row g-4">
+        <!-- INTRO TEXTO SEO -->
+        <section class="mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <p class="text-secondary fs-6">
+                        Tras la esterilización, el metabolismo de los perros cambia drásticamente: sus necesidades energéticas disminuyen entre un 20% y un 30%, mientras que su apetito suele aumentar por cuestiones hormonales. Elegir un pienso específico <strong>Light o Sterilised</strong> rico en fibra y proteínas de alta calidad es fundamental para evitar el sobrepeso y problemas articulares a largo plazo. Aquí tienes nuestra comparativa con las mejores opciones de Amazon.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            <!-- CARD 1 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="perro1.jpg" class="card-img-top" alt="Pienso para perros">
-                    <div class="card-body">
-                        <h5 class="card-title">Pienso Premium Adulto</h5>
-                        <p class="card-text">
-                            Alta digestibilidad, rico en proteínas y perfecto para perros adultos.
-                        </p>
-                        <a href="#" class="btn btn-primary">Ver en Amazon</a>
+        <!-- COMPARATIVA EN TARJETAS CON BARRAS -->
+        <section class="mb-5">
+            <h2 class="mb-4 text-center">Comparativa Top 3: Perros Esterilizados</h2>
+            
+            <div class="row g-4 justify-content-center">
+                
+                <!-- PRODUCTO 1: GANADOR / TOP 1 -->
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm border-warning">
+                        <div class="card-header bg-warning text-dark text-center fw-bold">
+                            🏆 1. Mejor Opción Calidad-Precio
+                        </div>
+                        <img src="img/esterilizado-1.jpg" class="card-img-top p-3" alt="Pienso Esterilizado 1" style="height: 200px; object-fit: contain;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Light & Sterilised Care</h5>
+                            <p class="text-muted small">Fórmula controlada con L-carnitina y aporte calórico reducido.</p>
+                            
+                            <!-- Barra Puntuación 1 -->
+                            <label class="form-label small fw-bold mb-1">Control de Peso:</label>
+                            <div class="progress mb-2" style="height: 15px;">
+                                <div class="progress-bar bg-success" style="width: 95%;">9.5/10</div>
+                            </div>
+
+                            <!-- Barra Puntuación 2 -->
+                            <label class="form-label small fw-bold mb-1">Saciabilidad:</label>
+                            <div class="progress mb-3" style="height: 15px;">
+                                <div class="progress-bar bg-info" style="width: 90%;">9.0/10</div>
+                            </div>
+
+                            <div class="row mt-auto">
+                                <div class="col-6">
+                                    <span class="text-success small fw-bold">Lo Mejor:</span>
+                                    <p class="text-secondary small">Ayuda a quemar grasas manteniendo músculo.</p>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-danger small fw-bold">Lo Peor:</span>
+                                    <p class="text-secondary small">Saco de tamaño medio.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="REEMPLAZAR_ENLACE_AMAZON_1" target="_blank" rel="nofollow noopener" class="btn btn-warning w-100 fw-bold text-dark">Ver precio en Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white text-center fw-bold">
+                            🥈 2. Efecto Sacitane Avanzado
+                        </div>
+                        <img src="img/esterilizado-2.jpg" class="card-img-top p-3" alt="Pienso Esterilizado 2" style="height: 200px; object-fit: contain;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Satiety Weight Management</h5>
+                            <p class="text-muted small">Alto contenido en fibras naturales para calmar el apetito constante.</p>
+                            
+                            <label class="form-label small fw-bold mb-1">Control de Peso:</label>
+                            <div class="progress mb-2" style="height: 15px;">
+                                <div class="progress-bar bg-success" style="width: 90%;">9.0/10</div>
+                            </div>
+
+                            <label class="form-label small fw-bold mb-1">Saciabilidad:</label>
+                            <div class="progress mb-3" style="height: 15px;">
+                                <div class="progress-bar bg-info" style="width: 95%;">9.5/10</div>
+                            </div>
+
+                            <div class="row mt-auto">
+                                <div class="col-6">
+                                    <span class="text-success small fw-bold">Lo Mejor:</span>
+                                    <p class="text-secondary small">Evita la ansiedad por la comida tras comer.</p>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-danger small fw-bold">Lo Peor:</span>
+                                    <p class="text-secondary small">Precio algo más elevado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="REEMPLAZAR_ENLACE_AMAZON_2" target="_blank" rel="nofollow noopener" class="btn btn-warning w-100 fw-bold text-dark">Ver precio en Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white text-center fw-bold">
+                            🥉 3. Opción Digestiva (Pavo)
+                        </div>
+                        <img src="img/esterilizado-3.jpg" class="card-img-top p-3" alt="Pienso Esterilizado 3" style="height: 200px; object-fit: contain;">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Balance Sterilised Turkey</h5>
+                            <p class="text-muted small">Proteína ligera de pavo con protección urinaria y digestiva.</p>
+                            
+                            <label class="form-label small fw-bold mb-1">Control de Peso:</label>
+                            <div class="progress mb-2" style="height: 15px;">
+                                <div class="progress-bar bg-success" style="width: 85%;">8.5/10</div>
+                            </div>
+
+                            <label class="form-label small fw-bold mb-1">Saciabilidad:</label>
+                            <div class="progress mb-3" style="height: 15px;">
+                                <div class="progress-bar bg-info" style="width: 85%;">8.5/10</div>
+                            </div>
+
+                            <div class="row mt-auto">
+                                <div class="col-6">
+                                    <span class="text-success small fw-bold">Lo Mejor:</span>
+                                    <p class="text-secondary small">Muy fácil digestión para estómagos delicados.</p>
+                                </div>
+                                <div class="col-6">
+                                    <span class="text-danger small fw-bold">Lo Peor:</span>
+                                    <p class="text-secondary small">Menor disponibilidad en stock.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 pb-3">
+                            <a href="REEMPLAZAR_ENLACE_AMAZON_3" target="_blank" rel="nofollow noopener" class="btn btn-warning w-100 fw-bold text-dark">Ver precio en Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN FAQs (PREGUNTAS FRECUENTES PARA SEO) -->
+        <section class="my-5 pt-4 border-top">
+            <h2 class="mb-4 text-center">Preguntas Frecuentes sobre Piensos para Esterilizados</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqEsterilizados">
+                        
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    ¿Por qué mi perro engorda tan rápido tras la esterilización?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqEsterilizados">
+                                <div class="accordion-body text-secondary">
+                                    Tras la cirugía, se producen cambios hormonales que reducen su actividad física general y su metabolismo basal. Al mismo tiempo, el apetito suele dispararse, por lo que si se mantiene el mismo pienso de adulto normal y las mismas raciones, el exceso de calorías se acumula en forma de grasa con facilidad.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    ¿Qué porcentaje de grasa debe tener un buen pienso 'Light'?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqEsterilizados">
+                                <div class="accordion-body text-secondary">
+                                    Por lo general, un pienso enfocado a perros esterilizados o con tendencia al sobrepeso suele rondar entre el <strong>10% y el 12% de grasa</strong> (frente al 15% o 18% de un pienso estándar para adultos), acompañado de un extra de fibra para mejorar la sensación de saciedad.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    ¿Es obligatorio cambiarle el pienso inmediatamente después de operar?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqEsterilizados">
+                                <div class="accordion-body text-secondary">
+                                    Se recomienda hacer la transición de forma gradual (mezclando el pienso antiguo con el nuevo durante 7-10 días) en cuanto el veterinario dé el visto bueno tras la recuperación de la cirugía, preferiblemente antes de que comience a ganar peso de más.
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- CARD 2 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="perro2.jpg" class="card-img-top" alt="Snacks para perros">
-                    <div class="card-body">
-                        <h5 class="card-title">Snacks Naturales</h5>
-                        <p class="card-text">
-                            Golosinas saludables sin aditivos, perfectas para entrenamiento.
-                        </p>
-                        <a href="#" class="btn btn-primary">Ver en Amazon</a>
-                    </div>
+    </main>
+
+    <!-- FOOTER CON AVISO LEGAL OBLIGATORIO DE AMAZON -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="fw-bold text-white mb-3">PiensoCanino</h5>
+                    <p class="small text-muted mb-3">
+                        En calidad de Afiliado de Amazon, este sitio web obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Amazon y el logotipo de Amazon son marcas comerciales de Amazon.com, Inc. o sus filiales.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="fw-bold text-white mb-3">Páginas Legales</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="aviso-legal.html" class="text-muted text-decoration-none">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html" class="text-muted text-decoration-none">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html" class="text-muted text-decoration-none">Política de Cookies</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <!-- CARD 3 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="perro3.jpg" class="card-img-top" alt="Accesorios para perros">
-                    <div class="card-body">
-                        <h5 class="card-title">Arnés Antitirones</h5>
-                        <p class="card-text">
-                            Cómodo, seguro y diseñado para evitar tirones durante el paseo.
-                        </p>
-                        <a href="#" class="btn btn-primary">Ver en Amazon</a>
-                    </div>
-                </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center small text-muted">
+                <p class="mb-0">&copy; 2026 PiensoCanino. Todos los derechos reservados.</p>
             </div>
-
         </div>
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>© 2026 PiensoCanino - Todos los derechos reservados</p>
     </footer>
 
     <!-- Bootstrap JS -->

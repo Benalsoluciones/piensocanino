@@ -6,12 +6,17 @@
     <title>PiensoCanino - Productos</title>
 
     <!-- Bootstrap CSS -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
 
-    <!-- Tu CSS -->
-    <link rel="stylesheet" href="estilo.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
 </head>
 
 <body>
@@ -61,60 +66,224 @@
         <p class="lead">Piensos, snacks y accesorios seleccionados para tu perro</p>
     </header>
 
-<!-- CONTENIDO -->
-    <div class="container my-5">
+    <!-- MAIN CONTENT -->
+    <main>
 
-        <div class="row g-4">
-
-            <!-- CARD 1 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="producto1.jpg" class="card-img-top" alt="Pienso">
-                    <div class="card-body">
-                        <h5 class="card-title">Pienso Natural Premium</h5>
-                        <p class="card-text">
-                            Ingredientes naturales, alta digestibilidad y sin cereales.
-                        </p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+        <!-- ========================================== -->
+        <!-- CATEGORÍA 1: PIENSO PERRO ADULTO (Tu base) -->
+        <!-- ========================================== -->
+        <section id="adultos" class="py-5 bg-light">
+            <div class="container my-5">
+                <h2 class="text-center mb-2">Piensos para Perros Adultos</h2>
+                <p class="text-center text-muted mb-5">Selección de los mejores piensos equilibrados para el mantenimiento diario</p>
+                
+                <div class="row g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-warning">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning text-dark px-3 py-2">🏆 Top 1 - Calidad/Precio</span>
+                            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71hz6jNyUwL.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Natural" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Pienso Natural Premium</h5>
+                                <p class="card-text flex-grow-1">The Hunger of Wolf Alimento seco para perros adultos, fórmula sin cereales con salmón y patatas - 14 kg.</p>
+                                <a href="https://amzn.to/4iUQdKy" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-secondary px-3 py-2">🥈 Alternativa Completa</span>
+                            <img src="https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T1/images/I/71cfSk3klZL.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Pollo" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Pienso seco Completo</h5>
+                                <p class="card-text flex-grow-1">Alimento seco Completo para Perro Adulto Rico en Pollo con Guisantes, 20 kg (Paquete de 1).</p>
+                                <a href="https://amzn.to/3TccFEJ" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-info text-dark px-3 py-2">🥉 Gran Formato</span>
+                            <img src="img/producto-adulto-3.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Adulto 3" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Pienso Mantenimiento Total</h5>
+                                <p class="card-text flex-grow-1">Aporte energético equilibrado para perros con actividad física moderada.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- CARD 2 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="producto2.jpg" class="card-img-top" alt="Snacks">
-                    <div class="card-body">
-                        <h5 class="card-title">Snacks de Pollo</h5>
-                        <p class="card-text">
-                            Ideales para entrenamiento, sin aditivos artificiales.
-                        </p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+        <!-- ========================================== -->
+        <!-- CATEGORÍA 2: CACHORROS / BABYS           -->
+        <!-- ========================================== -->
+        <section id="cachorros" class="py-5 bg-white">
+            <div class="container my-5">
+                <h2 class="text-center mb-2">Piensos para Cachorros y Babys</h2>
+                <p class="text-center text-muted mb-5">Nutrición especializada para un crecimiento fuerte, huesos sanos y desarrollo óptimo</p>
+                
+                <div class="row g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-warning">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning text-dark px-3 py-2">🏆 Top Cachorros</span>
+                            <img src="img/cachorro-1.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Cachorros 1" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Puppy Starter & Growth</h5>
+                                <p class="card-text flex-grow-1">Croquetas adaptadas para la transición a sólido y alto contenido en DHA para el cerebro.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/cachorro-2.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Cachorros 2" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Junior Nutrición Esencial</h5>
+                                <p class="card-text flex-grow-1">Proteínas de alta digestibilidad para estómagos sensibles en fase de desarrollo.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/cachorro-3.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Cachorros 3" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Cachorros Razas Medias/Grandes</h5>
+                                <p class="card-text flex-grow-1">Control de minerales para asegurar un correcto desarrollo articular y óseo.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- CARD 3 -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="producto3.jpg" class="card-img-top" alt="Accesorios">
-                    <div class="card-body">
-                        <h5 class="card-title">Correa Antitirones</h5>
-                        <p class="card-text">
-                            Resistente, cómoda y diseñada para paseos seguros.
-                        </p>
-                        <a href="#" class="btn btn-primary">Comprar</a>
+        <!-- ========================================== -->
+        <!-- CATEGORÍA 3: RAZAS PEQUEÑAS (MINI & TOY)  -->
+        <!-- ========================================== -->
+        <section id="razas-pequenas" class="py-5 bg-light">
+            <div class="container my-5">
+                <h2 class="text-center mb-2">Piensos para Razas Pequeñas</h2>
+                <p class="text-center text-muted mb-5">Croquetas mini extradeliciosas diseñadas para mandíbulas pequeñas y alta energía</p>
+                
+                <div class="row g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-warning">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning text-dark px-3 py-2">🏆 Top Mini</span>
+                            <img src="img/mini-1.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Mini 1" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Mini Adult Salmón & Arroz</h5>
+                                <p class="card-text flex-grow-1">Alta palatabilidad para perros exigentes y croqueta de tamaño reducido.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/mini-2.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Mini 2" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Mini Complete Care</h5>
+                                <p class="card-text flex-grow-1">Cuidado dental avanzado para prevenir la acumulación de sarro en perros pequeños.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/mini-3.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Mini 3" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Toy & Mini Senior</h5>
+                                <p class="card-text flex-grow-1">Especial para perritos miniatura de más de 8 años con protección articular.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <!-- ========================================== -->
+        <!-- CATEGORÍA 4: PERROS ESTERILIZADOS        -->
+        <!-- ========================================== -->
+        <section id="esterilizados" class="py-5 bg-white">
+            <div class="container my-5">
+                <h2 class="text-center mb-2">Piensos para Perros Esterilizados</h2>
+                <p class="text-center text-muted mb-5">Fórmulas bajas en calorías y ricas en fibra para controlar el peso tras la esterilización</p>
+                
+                <div class="row g-4">
+                    <!-- CARD 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-warning">
+                            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning text-dark px-3 py-2">🏆 Top Control Peso</span>
+                            <img src="img/esterilizado-1.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Esterilizado 1" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Light & Sterilised Care</h5>
+                                <p class="card-text flex-grow-1">Aporte calórico reducido con L-carnitina para ayudar a quemar grasas y mantener músculo.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/esterilizado-2.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Esterilizado 2" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Satiety Weight Management</h5>
+                                <p class="card-text flex-grow-1">Alto contenido en fibra natural para proporcionar efecto saciante y evitar la ansiedad por comer.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="img/esterilizado-3.jpg" class="card-img-top d-block w-100 p-3 pt-4" alt="Pienso Esterilizado 3" style="height: 260px; object-fit: contain;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Balance Sterilised Turkey</h5>
+                                <p class="card-text highly-digestible">Protección urinaria y digestiva con carne de pavo ligera y fácil de procesar.</p>
+                                <a href="REEMPLAZAR_ENLACE_AMAZON" target="_blank" rel="nofollow noopener" class="btn btn-primary mt-auto">Comprar en Amazon</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER CON AVISO LEGAL OBLIGATORIO DE AMAZON -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <h5 class="fw-bold text-white mb-3">PiensoCanino</h5>
+                    <p class="small text-muted mb-3">
+                        En calidad de Afiliado de Amazon, este sitio web obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Amazon y el logotipo de Amazon son marcas comerciales de Amazon.com, Inc. o sus filiales.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="fw-bold text-white mb-3">Páginas Legales</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="aviso-legal.html" class="text-muted text-decoration-none">Aviso Legal</a></li>
+                        <li><a href="politica-privacidad.html" class="text-muted text-decoration-none">Política de Privacidad</a></li>
+                        <li><a href="politica-cookies.html" class="text-muted text-decoration-none">Política de Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center small text-muted">
+                <p class="mb-0">&copy; 2026 PiensoCanino. Todos los derechos reservados.</p>
+            </div>
         </div>
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>© 2026 PiensoCanino - Todos los derechos reservados</p>
     </footer>
 
     <!-- Bootstrap JS -->
